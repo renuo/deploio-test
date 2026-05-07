@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: deploio_test_production
-  username: deploio_test
-  password: <%= ENV["DEPLOIO_TEST_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
